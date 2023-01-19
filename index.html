@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="initialize();">
+    <h1>Shopping Cart</h1>
+    <div class="addBox">
+        <form id="formID" onsubmit="return addItem(this.inputItem, this.inputAmount)">
+            <div>
+                <input type="text" id="inputItem" placeholder="Enter an Item">
+            </div>
+
+            <div>
+                <input type="number" id="inputAmount" placeholder="Amount" min="1">
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Add to Cart">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <span>Current Items</span>
+        <ol id="list">
+
+        </ol>
+    </div>
+
+    <div class="indexBox">
+        <form id="formChange" onsubmit="return changeCurrentIndex(this.index);">
+            <div>
+                <input type="number" id="index" placeholder="Select Item Number" min="0">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Confirm">
+            </div>
+        </form>
+        <div class="buttons">
+            <button onclick="moveItem(-1)">Move Item Up</button>
+            <button onclick="moveItem(1)">Move Item Down</button>
+            <button onclick="deleteItem()">Remove Item</button>
+        </div>
+    </div>
+</body>
+
+</html>

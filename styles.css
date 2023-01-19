@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+div {
+    padding-top: 2%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button{
+    width: 150px;
+    margin-bottom: 5px;
+}
