@@ -3,6 +3,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 3%;
+    background-color: lightgray;
+}
+
+img {
+    max-width: 200px;
 }
 
 h1 {
